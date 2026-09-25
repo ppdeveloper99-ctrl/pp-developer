@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PP Developer | Premium Properties in Pune</title>
+<meta name="description" content="PP Developer - Residential properties, new projects and homes in Pune.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f7f8fa;line-height:1.5}
+a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #eee}.navin{max-width:1180px;margin:auto;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 20px}.logo{font-size:25px;font-weight:800;letter-spacing:.5px;color:#b7862d}.logo span{display:block;font-size:10px;letter-spacing:3px;color:#777;font-weight:600}.links{display:flex;gap:28px;font-size:14px;font-weight:600}.btn{background:#b7862d;color:#fff;padding:12px 19px;border-radius:8px;font-weight:700;display:inline-block;border:0;cursor:pointer}
+.hero{min-height:570px;background:linear-gradient(90deg,rgba(7,15,28,.82),rgba(7,15,28,.35)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85') center/cover;display:flex;align-items:center}.heroin{max-width:1180px;margin:auto;width:100%;padding:70px 20px;color:#fff}.eyebrow{color:#e5c37a;font-weight:700;letter-spacing:2px;font-size:13px}.hero h1{font-size:52px;line-height:1.08;max-width:700px;margin:15px 0}.hero p{max-width:590px;font-size:18px;color:#e8ebef;margin-bottom:28px}.search{background:#fff;padding:12px;border-radius:12px;display:flex;gap:10px;max-width:850px;box-shadow:0 15px 40px rgba(0,0,0,.2)}.search input,.search select{border:1px solid #ddd;padding:14px;border-radius:8px;flex:1;min-width:0}
+.section{max-width:1180px;margin:auto;padding:70px 20px}.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px}.head h2{font-size:34px}.muted{color:#697386}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #e9ebef;box-shadow:0 8px 24px rgba(20,30,50,.06)}.pic{height:210px;background-size:cover;background-position:center;position:relative}.tag{position:absolute;top:14px;left:14px;background:#fff;padding:7px 10px;border-radius:20px;font-size:12px;font-weight:700}.body{padding:19px}.body h3{font-size:21px;margin-bottom:6px}.price{color:#b7862d;font-weight:800;font-size:17px;margin:10px 0}.meta{font-size:13px;color:#6b7280;display:flex;gap:12px;flex-wrap:wrap}.card .btn{margin-top:16px;font-size:13px}
+.features{background:#101827;color:#fff}.featuregrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.feature{padding:25px;background:#172235;border-radius:12px}.feature b{display:block;font-size:17px;margin:9px 0}.feature span{font-size:13px;color:#b8c1ce}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.aboutimg{height:430px;border-radius:16px;background:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85') center/cover}.about h2{font-size:36px;margin:10px 0 15px}.checks{margin-top:20px;display:grid;gap:12px}.checks div{background:#fff;border:1px solid #eee;padding:13px;border-radius:9px}
+.contact{background:#fff}.contactbox{display:grid;grid-template-columns:1fr 1fr;gap:25px;background:#f3f5f7;border-radius:16px;padding:35px}.contactbox input,.contactbox textarea{width:100%;padding:14px;border:1px solid #dfe3e8;border-radius:8px;margin-bottom:12px;font-family:inherit}.contactbox textarea{height:120px}.full{grid-column:1/-1}
+.footer{background:#0c1422;color:#cbd3df;padding:40px 20px}.footin{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:25px}.footer b{color:#fff}.small{font-size:13px;margin-top:8px}.wa{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:25px;box-shadow:0 8px 25px rgba(0,0,0,.25);z-index:30}
+@media(max-width:800px){.links{display:none}.hero h1{font-size:38px}.search{flex-direction:column}.grid,.featuregrid,.about,.contactbox{grid-template-columns:1fr}.aboutimg{height:300px}.head{display:block}.head .btn{margin-top:15px}.footin{display:block}.footer .small{margin-bottom:15px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="navin"><a class="logo" href="#">PP DEVELOPER<span>REAL ESTATE • PUNE</span></a><div class="links"><a href="#projects">Projects</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></div><a class="btn" href="tel:+919130559193">Call Now</a></div></nav>
+
+<header class="hero"><div class="heroin">
+<div class="eyebrow">TRUSTED REAL ESTATE CONSULTING</div>
+<h1>Find a Home That Fits Your Life.</h1>
+<p>Discover residential projects across Pune with practical guidance on location, budget, configuration and possession.</p>
+<div class="search"><input id="q" placeholder="Search location e.g. Kharadi, Hinjewadi"><select id="budget"><option>Any Budget</option><option>Under ₹55 Lakh</option><option>₹55–75 Lakh</option><option>₹75 Lakh–₹1 Cr</option><option>₹1 Cr+</option></select><button class="btn" onclick="filterProjects()">Search Projects</button></div>
+</div></header>
+
+<section id="projects" class="section"><div class="head"><div><div class="eyebrow">FEATURED PROJECTS</div><h2>Popular Homes in Pune</h2><p class="muted">Sample listings — replace these with your live inventory.</p></div><a class="btn" href="#contact">Get Project List</a></div>
+<div class="grid" id="projectGrid">
+<article class="card project" data-location="Punawale" data-budget="75"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80')"><span class="tag">New Launch</span></div><div class="body"><h3>Rohit 108 Astera</h3><div class="muted">Punawale, Pune</div><div class="price">₹70 Lakh* onwards</div><div class="meta"><span>2 & 3 BHK</span><span>2028 Possession</span></div><a class="btn" href="#contact">Enquire</a></div></article>
+<article class="card project" data-location="Hinjewadi" data-budget="80"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80')"><span class="tag">2 & 3 BHK</span></div><div class="body"><h3>Premium Homes</h3><div class="muted">Hinjewadi, Pune</div><div class="price">₹75 Lakh* onwards</div><div class="meta"><span>750+ sq.ft.</span><span>Near IT Hub</span></div><a class="btn" href="#contact">Enquire</a></div></article>
+<article class="card project" data-location="Kharadi" data-budget="85"><div class="pic" style="background-image:url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=80')"><span class="tag">Prime Location</span></div><div class="body"><h3>Urban Residences</h3><div class="muted">Kharadi, Pune</div><div class="price">₹75 Lakh* onwards</div><div class="meta"><span>2 & 3 BHK</span><span>IT Corridor</span></div><a class="btn" href="#contact">Enquire</a></div></article>
+</div></section>
+
+<section id="services" class="features"><div class="section"><div class="head"><div><div class="eyebrow">WHY PP DEVELOPER</div><h2>Simple. Clear. Property Guidance.</h2></div></div><div class="featuregrid">
+<div class="feature">01<b>Project Shortlisting</b><span>Options based on budget, carpet area, location and possession.</span></div>
+<div class="feature">02<b>Site Visit</b><span>Coordinate visits and help you compare shortlisted projects.</span></div>
+<div class="feature">03<b>Home Loan Support</b><span>Connect you with loan assistance for eligible buyers.</span></div>
+<div class="feature">04<b>After-Sale Guidance</b><span>Support through the property buying journey.</span></div>
+</div></div></section>
+
+<section id="about" class="section"><div class="about"><div class="aboutimg"></div><div><div class="eyebrow">ABOUT PP DEVELOPER</div><h2>Your Local Pune Property Consultant</h2><p class="muted">PP Developer helps homebuyers explore residential projects in Pune with straightforward project information and site-visit coordination.</p><div class="checks"><div>✓ Budget-focused project options</div><div>✓ Carpet-area & configuration comparison</div><div>✓ Location and connectivity guidance</div><div>✓ Site visit assistance</div></div></div></div></section>
+
+<section id="contact" class="section contact"><div class="head"><div><div class="eyebrow">CONTACT</div><h2>Tell Us Your Requirement</h2><p class="muted">We’ll help shortlist suitable projects.</p></div></div>
+<div class="contactbox"><div><input id="name" placeholder="Your Name"><input id="phone" placeholder="Mobile Number"><input id="loc" placeholder="Preferred Location"><input id="req" placeholder="Requirement (e.g. 2 BHK, ₹75L)"></div><div><textarea id="msg" placeholder="Anything else?"></textarea><button class="btn full" onclick="sendWhatsApp()">Send Requirement on WhatsApp</button></div></div></section>
+
+<footer class="footer"><div class="footin"><div><b>PP DEVELOPER</b><div class="small">Real Estate • Pune</div></div><div class="small">📞 9130559193 &nbsp; | &nbsp; 7775887214<br>✉ ppund99@gmail.com</div><div class="small">Bhekrai Nagar, Hadapsar, Pune</div></div></footer>
+<a class="wa" href="https://wa.me/919130559193?text=Hello%20PP%20Developer%2C%20I%20want%20property%20details." target="_blank" aria-label="WhatsApp">⌕</a>
+<script>
+function filterProjects(){const q=document.getElementById('q').value.toLowerCase();const b=document.getElementById('budget').value;let max=999;if(b.includes('55'))max=55;else if(b.includes('75'))max=75;else if(b.includes('1 Cr'))max=100;document.querySelectorAll('.project').forEach(c=>{let okLoc=!q||c.dataset.location.toLowerCase().includes(q);let okBudget=max===999||Number(c.dataset.budget)<=max;c.style.display=okLoc&&okBudget?'block':'none'});document.getElementById('projects').scrollIntoView({behavior:'smooth'})}
+function sendWhatsApp(){let n=document.getElementById('name').value,p=document.getElementById('phone').value,l=document.getElementById('loc').value,r=document.getElementById('req').value,m=document.getElementById('msg').value;let text=`Hello PP Developer,%0AName: ${n}%0AMobile: ${p}%0ALocation: ${l}%0ARequirement: ${r}%0A${m}`;window.open('https://wa.me/919130559193?text='+text,'_blank')}
+</script>
+</body></html>
